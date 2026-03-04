@@ -29,6 +29,8 @@ Most of my professional contributions are under my work account:
 
 _Personal GitHub account activity (`@jmichaelthurman`)_
 <!--START_SECTION:activity-->
+1. 🎉 Merged PR [#1](https://github.com/jmichaelthurman/jmichaelthurman/pull/1) in [jmichaelthurman/jmichaelthurman](https://github.com/jmichaelthurman/jmichaelthurman)
+2. 💪 Opened PR [#1](https://github.com/jmichaelthurman/jmichaelthurman/pull/1) in [jmichaelthurman/jmichaelthurman](https://github.com/jmichaelthurman/jmichaelthurman)
 <!--END_SECTION:activity-->
 
 ---
