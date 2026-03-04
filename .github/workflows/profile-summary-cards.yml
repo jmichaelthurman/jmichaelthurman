@@ -1,0 +1,24 @@
+name: Generate profile summary cards (personal)
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily at 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate PERSONAL cards (jmichaelthurman)
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: jmichaelthurman
+          BRANCH_NAME: bug/update-workflow-version
+          OUTPUT_DIR: profile-cards/personal
+          THEME: tokyonight
+          
