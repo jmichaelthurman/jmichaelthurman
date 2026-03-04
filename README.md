@@ -19,18 +19,13 @@ Most of my professional contributions are under my work account:
 
 ## GitHub Activity
 
-### Work Contributions
-![Work Stats](https://github-readme-stats.vercel.app/api?username=mthurman-sumer&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true)
+### Work Contributions (static, public-visible)
+![Work Details](profile-cards/work/profile-details-card.png)
+![Work Summary](profile-cards/work/profile-summary-card.png)
 
-### Personal Contributions
-![Personal Stats](https://github-readme-stats.vercel.app/api?username=jmichaelthurman&show_icons=true&theme=tokyonight&include_all_commits=true)
-
-## Recent Activity
-
-_Personal GitHub account activity (`@jmichaelthurman`)_
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
-
+### Personal Contributions (static)
+![Personal Details](profile-cards/personal/profile-details-card.png)
+![Personal Summary](profile-cards/personal/profile-summary-card.png)
 ---
 
 ## Technology Stack
