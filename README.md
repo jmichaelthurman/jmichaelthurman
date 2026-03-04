@@ -27,6 +27,7 @@ Most of my professional contributions are under my work account:
 
 ## Recent Activity
 
+_Personal GitHub account activity (`@jmichaelthurman`)_
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
 
