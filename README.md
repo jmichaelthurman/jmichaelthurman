@@ -81,7 +81,7 @@ _Personal GitHub account activity (`@jmichaelthurman`)_
 - Built Aurora Serverless v2 databases with cross-region failover and environment-specific capacity tuning
 - Implemented Serverless PrivateLink with Lambda-automated RDS failover for cross-VPC database connectivity
 - Provisioned CloudFront CDN distributions, KMS key management, and SQS queues for data pipelines
-- 770+ commits across infrastructure repos in 12 months; 100+ merged PRs across 11 repositories
+- Led infrastructure contributions across 11 repositories using trunk-based development and code review workflows
 
 **Technologies:** OpenTofu, Terramate, AWS (EKS, Aurora, CloudFront, Lambda, PrivateLink, KMS, SQS), Karpenter
 
