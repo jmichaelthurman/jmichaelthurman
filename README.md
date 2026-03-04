@@ -19,13 +19,12 @@ Most of my professional contributions are under my work account:
 
 ## GitHub Activity
 
-### Work Contributions (static, public-visible)
 ![Work Details](profile-cards/work/profile-details-card.png)
 ![Work Summary](profile-cards/work/profile-summary-card.png)
 
-### Personal Contributions (static)
 ![Personal Details](profile-cards/personal/profile-details-card.png)
 ![Personal Summary](profile-cards/personal/profile-summary-card.png)
+
 ---
 
 ## Technology Stack
