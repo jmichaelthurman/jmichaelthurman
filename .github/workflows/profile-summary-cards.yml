@@ -12,23 +12,58 @@ jobs:
   cards:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate WORK cards (mthurman-sumer)
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git identity (for commits)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Debug git environment
+        run: |
+          echo "ref=${GITHUB_REF}"
+          echo "sha=${GITHUB_SHA}"
+          pwd
+          ls -la
+          git status
+          git rev-parse --is-inside-work-tree
+          git remote -v
+
+      - name: Generate WORK cards (auto-push)
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: mthurman-sumer
-          BRANCH_NAME: bug/update-workflow-version
-          OUTPUT_DIR: profile-cards/work
-          THEME: tokyonight
+          BRANCH_NAME: main
+          UTC_OFFSET: 0
+          AUTO_PUSH: true
 
-      - name: Generate PERSONAL cards (jmichaelthurman)
+      - name: Debug after WORK generation
+        if: always()
+        run: |
+          ls -la
+          # the action's default output dir (per your logs)
+          ls -la ./profile-summary-card-output || true
+          git status
+
+      - name: Generate PERSONAL cards (auto-push)
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: jmichaelthurman
-          BRANCH_NAME: bug/update-workflow-version
-          OUTPUT_DIR: profile-cards/personal
-          THEME: tokyonight
+          BRANCH_NAME: main
+          UTC_OFFSET: 0
+          AUTO_PUSH: true
+
+      - name: Debug after PERSONAL generation
+        if: always()
+        run: |
+          ls -la
+          ls -la ./profile-summary-card-output || true
+          git status
           
