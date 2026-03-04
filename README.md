@@ -19,17 +19,13 @@ Most of my professional contributions are under my work account:
 
 ## GitHub Activity
 
-### Work Contributions
-Most of my professional contributions are under my work account:
-
-**Work Account:** [@mthurman-sumer](https://github.com/mthurman-sumer) | **Organization:** [SumerSports](https://github.com/SumerSports)
-
-_(Work stats aren’t shown here because most activity is in private repositories.)_
+### Work Contributions (static, public-visible)
+![Work Details](profile-cards/work/profile-details-card.png)
+![Work Summary](profile-cards/work/profile-summary-card.png)
 
 ### Personal Contributions (static)
 ![Personal Details](profile-cards/personal/profile-details-card.png)
 ![Personal Summary](profile-cards/personal/profile-summary-card.png)
-
 ---
 
 ## Technology Stack
