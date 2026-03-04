@@ -20,18 +20,15 @@ Most of my professional contributions are under my work account:
 ## GitHub Activity
 
 ### Work Contributions
-![Work Stats](https://github-readme-stats.vercel.app/api?username=mthurman-sumer&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true)
+Most of my professional contributions are under my work account:
 
-### Personal Contributions
-![Personal Stats](https://github-readme-stats.vercel.app/api?username=jmichaelthurman&show_icons=true&theme=tokyonight&include_all_commits=true)
+**Work Account:** [@mthurman-sumer](https://github.com/mthurman-sumer) | **Organization:** [SumerSports](https://github.com/SumerSports)
 
-## Recent Activity
+_(Work stats aren’t shown here because most activity is in private repositories.)_
 
-_Personal GitHub account activity (`@jmichaelthurman`)_
-<!--START_SECTION:activity-->
-1. 🎉 Merged PR [#1](https://github.com/jmichaelthurman/jmichaelthurman/pull/1) in [jmichaelthurman/jmichaelthurman](https://github.com/jmichaelthurman/jmichaelthurman)
-2. 💪 Opened PR [#1](https://github.com/jmichaelthurman/jmichaelthurman/pull/1) in [jmichaelthurman/jmichaelthurman](https://github.com/jmichaelthurman/jmichaelthurman)
-<!--END_SECTION:activity-->
+### Personal Contributions (static)
+![Personal Details](profile-cards/personal/profile-details-card.png)
+![Personal Summary](profile-cards/personal/profile-summary-card.png)
 
 ---
 
