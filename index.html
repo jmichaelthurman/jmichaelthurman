@@ -1,0 +1,392 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="J. Michael Thurman — SRE, DevOps, Platform Engineering, and Cloud Infrastructure across AWS, Azure, and GCP">
+  <title>J. Michael Thurman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <a href="#hero" class="nav-brand">jmthurman</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#writing">Writing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section id="hero">
+      <p class="hero-eyebrow">// Norman, OK &nbsp;·&nbsp; SRE · DevOps · Platform Engineering</p>
+      <h1>J. Michael Thurman</h1>
+      <p class="hero-sub">
+        10+ years building reliable cloud infrastructure across AWS, Azure, and GCP.
+        From Kubernetes operations and GitOps to IaC at scale and compliance-hardened environments.
+      </p>
+      <div class="hero-ctas">
+        <a href="#work" class="btn btn-primary">View My Work</a>
+        <a href="https://github.com/jmichaelthurman" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+        <a href="https://linkedin.com/in/jmichaelthurman" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- ── About ── -->
+    <section id="about">
+      <p class="section-label">// about</p>
+      <h2>Site Reliability Engineer.<br>Platform Architect.</h2>
+      <p>
+        I design and operate the cloud platforms that engineering teams build on —
+        multi-account AWS environments, Kubernetes fleets, GitOps pipelines, and the IaC
+        frameworks that make all of it reproducible and auditable.
+      </p>
+      <p>
+        Currently at <strong>SumerSports</strong>, operating infrastructure for 100 engineers across
+        <strong>10 EKS clusters</strong> and <strong>15 AWS accounts</strong>.
+        Previously at <strong>Moonswitch</strong> as Senior SRE, running 12 EKS clusters across
+        5 client environments including Azure Government Cloud air-gapped workloads.
+        AWS certified: <strong>DevOps Professional</strong> &amp; <strong>SysOps Associate</strong>.
+      </p>
+      <p>
+        The technical work is only part of it. I've led incident command in P0/P1 situations,
+        owned cross-functional technical programs, and built teams that actually ship.
+        The soft skills — public speaking, executive communication, mentorship — are as real as the Terraform.
+      </p>
+      <div class="about-meta">
+        <div class="meta-item">
+          <span class="meta-label">Location</span>
+          <span class="meta-value">Norman, OK</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Currently</span>
+          <span class="meta-value">SumerSports</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Certifications</span>
+          <span class="meta-value">AWS DevOps Pro · SysOps Associate</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">GitHub (personal)</span>
+          <span class="meta-value"><a href="https://github.com/jmichaelthurman">@jmichaelthurman</a></span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">GitHub (work)</span>
+          <span class="meta-value"><a href="https://github.com/mthurman-sumer">@mthurman-sumer</a></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Skills ── -->
+    <section id="skills">
+      <p class="section-label">// stack</p>
+      <h2>Tools &amp; Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Cloud</h3>
+          <div class="skill-tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Azure</span>
+            <span class="tag">GCP</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>IaC</h3>
+          <div class="skill-tags">
+            <span class="tag">Terraform</span>
+            <span class="tag">Terramate</span>
+            <span class="tag">CloudFormation</span>
+            <span class="tag">HCL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Orchestration</h3>
+          <div class="skill-tags">
+            <span class="tag">Kubernetes</span>
+            <span class="tag">EKS</span>
+            <span class="tag">AKS</span>
+            <span class="tag">Karpenter</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>GitOps &amp; CI/CD</h3>
+          <div class="skill-tags">
+            <span class="tag">ArgoCD</span>
+            <span class="tag">FluxCD</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">GitLab CI</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Observability</h3>
+          <div class="skill-tags">
+            <span class="tag">Datadog</span>
+            <span class="tag">Prometheus</span>
+            <span class="tag">New Relic</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Bash</span>
+            <span class="tag">PowerShell</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Data</h3>
+          <div class="skill-tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Aurora</span>
+            <span class="tag">Kinesis</span>
+            <span class="tag">Kafka</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Compliance</h3>
+          <div class="skill-tags">
+            <span class="tag">SOC2</span>
+            <span class="tag">FedRAMP</span>
+            <span class="tag">NIST-800-53</span>
+            <span class="tag">PCI-DSS</span>
+            <span class="tag">FISMA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Work Highlights ── -->
+    <section id="work">
+      <p class="section-label">// work</p>
+      <h2>What I've Built</h2>
+      <div class="work-grid">
+
+        <div class="work-card">
+          <p class="work-card-icon">// aws · platform · gitops</p>
+          <h3>Multi-Account AWS Platform</h3>
+          <p>
+            Operating infrastructure for 100 engineers across 10 EKS clusters and 15 AWS
+            accounts at SumerSports. Built the Terramate Catalyst framework — reducing
+            new Aurora cluster provisioning from up to 10 business days to 30 minutes via
+            self-service IaC bundles.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <p class="work-card-icon">// disaster recovery · iac</p>
+          <h3>72h → 12h DR Recovery Time</h3>
+          <p>
+            Reduced full-environment recovery from 72 hours to 12–18 hours at Moonswitch
+            by codifying all client infrastructure in Terraform — turning a manual, error-prone
+            rebuild process into a repeatable, auditable pipeline.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <p class="work-card-icon">// azure · cost optimization</p>
+          <h3>$600k Azure Cost Recovery</h3>
+          <p>
+            Led a 12-month technical program to recover $600K from a $1.2M undocumented
+            Azure footprint (approved budget: $0). Largest single lever: a 64-core VM at
+            $40K/month delivering zero throughput, migrated to Azure Managed SQL at $7K/month.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <p class="work-card-icon">// kubernetes · observability</p>
+          <h3>EKS Cluster Stabilization</h3>
+          <p>
+            Diagnosed and resolved cascading failures in a 65-node EKS cluster running
+            250+ full-stack preview environments — uncovering DNS quota exhaustion and
+            GraphQL middleware holding 800+ open database connections through targeted
+            observability.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Projects ── -->
+    <section id="projects">
+      <p class="section-label">// projects</p>
+      <h2>Open Source</h2>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>eks-upgrade-check</h3>
+          <div class="project-links">
+            <a href="https://github.com/jmichaelthurman/eks-upgrade-check" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p>
+          Pre-flight readiness scoring for Kubernetes cluster upgrades. Detects deprecated and
+          removed APIs, validates CRD compatibility, checks EKS addon versions, analyzes workload
+          configurations, and audits security policies — producing a 0–100 readiness score with
+          READY / CAUTION / NOT_READY / BLOCKED status and prioritized remediation guidance.
+          Works with EKS, GKE, AKS, K3s, KinD, and Minikube.
+        </p>
+        <div class="project-stack">
+          <span class="tag">Python</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">EKS</span>
+          <span class="tag">boto3</span>
+          <span class="tag">AWS SSO</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>open-brain-cloud</h3>
+          <div class="project-links">
+            <a href="https://github.com/jmichaelthurman/open-brain-cloud" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://jmichaelthurman.github.io/open-brain-cloud/" target="_blank" rel="noopener">Docs</a>
+          </div>
+        </div>
+        <p>
+          A cloud-native MCP (Model Context Protocol) knowledge server providing semantic
+          memory across AI sessions. Deployed on Fly.io with Supabase pgvector for
+          embedding storage, Voyage AI embeddings, and a REST capture endpoint for iOS Shortcuts.
+        </p>
+        <div class="project-stack">
+          <span class="tag">TypeScript</span>
+          <span class="tag">Fly.io</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">pgvector</span>
+          <span class="tag">MCP</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── Writing ── -->
+    <section id="writing">
+      <p class="section-label">// writing</p>
+      <h2>Articles</h2>
+      <p style="color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem;">Published on LinkedIn. Kubernetes-focused series covering operations, security, and observability.</p>
+
+      <div class="writing-group">
+        <p class="writing-group-label">// security</p>
+        <div class="writing-list">
+          <a class="writing-item" href="https://www.linkedin.com/pulse/securing-kubernetes-api-control-plane-etcd-rationale-best-thurman-nzhee" target="_blank" rel="noopener">
+            <span class="writing-title">Securing the Kubernetes API, Control Plane &amp; etcd</span>
+            <span class="writing-arrow">→</span>
+          </a>
+          <a class="writing-item" href="https://www.linkedin.com/pulse/securing-kubernetes-nodes-key-concepts-bootstrapped-aws-thurman-gazlc" target="_blank" rel="noopener">
+            <span class="writing-title">Securing Kubernetes Nodes: Key Concepts on AWS</span>
+            <span class="writing-arrow">→</span>
+          </a>
+          <a class="writing-item" href="https://www.linkedin.com/pulse/network-policy-kubernetes-exploration-rationale-j-michael-thurman-4oaoc" target="_blank" rel="noopener">
+            <span class="writing-title">Network Policy in Kubernetes: Exploration &amp; Rationale</span>
+            <span class="writing-arrow">→</span>
+          </a>
+          <a class="writing-item" href="https://www.linkedin.com/pulse/securing-kubernetes-service-mesh-j-michael-thurman-yri1c" target="_blank" rel="noopener">
+            <span class="writing-title">Securing the Kubernetes Service Mesh</span>
+            <span class="writing-arrow">→</span>
+          </a>
+          <a class="writing-item" href="https://www.linkedin.com/pulse/review-security-compliance-frameworks-practices-clusters-thurman-bj0wc" target="_blank" rel="noopener">
+            <span class="writing-title">Security &amp; Compliance Frameworks for Kubernetes Clusters</span>
+            <span class="writing-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="writing-group">
+        <p class="writing-group-label">// observability</p>
+        <div class="writing-list">
+          <a class="writing-item" href="https://www.linkedin.com/pulse/monitoring-logging-observability-kubernetes-clusters-concepts-eqmlc" target="_blank" rel="noopener">
+            <span class="writing-title">Monitoring, Logging &amp; Observability in Kubernetes</span>
+            <span class="writing-arrow">→</span>
+          </a>
+          <a class="writing-item" href="https://www.linkedin.com/pulse/top-tools-monitoring-kubernetes-clusters-open-source-paid-thurman-8jaac" target="_blank" rel="noopener">
+            <span class="writing-title">Top Tools for Monitoring Kubernetes: Open Source &amp; Paid</span>
+            <span class="writing-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="writing-group">
+        <p class="writing-group-label">// platform &amp; operations</p>
+        <div class="writing-list">
+          <a class="writing-item" href="https://www.linkedin.com/pulse/how-prepare-your-aws-elastic-kubernetes-service-cluster-thurman-qxumc" target="_blank" rel="noopener">
+            <span class="writing-title">How to Prepare Your AWS EKS Cluster for an Upgrade</span>
+            <span class="writing-arrow">→</span>
+          </a>
+          <a class="writing-item" href="https://www.linkedin.com/pulse/what-service-mesh-j-michael-thurman-a6fzc" target="_blank" rel="noopener">
+            <span class="writing-title">What Is a Service Mesh?</span>
+            <span class="writing-arrow">→</span>
+          </a>
+          <a class="writing-item" href="https://www.linkedin.com/pulse/analysis-kubernetes-implementation-options-aws-eks-azure-thurman-bxabc" target="_blank" rel="noopener">
+            <span class="writing-title">Kubernetes on AWS vs. Azure: An Analysis</span>
+            <span class="writing-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="writing-group">
+        <p class="writing-group-label">// leadership &amp; ai</p>
+        <div class="writing-list">
+          <a class="writing-item" href="https://www.linkedin.com/pulse/how-calculate-business-value-tech-procurement-projects-thurman-xloac" target="_blank" rel="noopener">
+            <span class="writing-title">How to Calculate Business Value of Tech Procurement Projects</span>
+            <span class="writing-arrow">→</span>
+          </a>
+          <a class="writing-item" href="https://www.linkedin.com/pulse/prompting-ai-journey-from-confusion-clarity-j-michael-thurman-p1j5c" target="_blank" rel="noopener">
+            <span class="writing-title">Prompting AI: A Journey from Confusion to Clarity</span>
+            <span class="writing-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── Contact ── -->
+    <section id="contact">
+      <p class="section-label">// contact</p>
+      <h2>Get In Touch</h2>
+      <p>I'm not actively looking, but I'm always open to interesting infrastructure and platform challenges.</p>
+      <div class="contact-links">
+        <a href="mailto:jmthurman@cloudbrook.net" class="btn btn-primary">Email Me</a>
+        <a href="https://linkedin.com/in/jmichaelthurman" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+        <a href="https://github.com/jmichaelthurman" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Built with Jekyll &amp; GitHub Pages &nbsp;·&nbsp;
+      <a href="https://github.com/jmichaelthurman/jmichaelthurman.github.io">source</a>
+    </p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('nav-links').classList.toggle('open');
+    }
+
+    // close mobile nav on link click
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('nav-links').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>

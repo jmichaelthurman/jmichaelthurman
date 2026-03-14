@@ -1,0 +1,12 @@
+title: J. Michael Thurman
+description: DevOps · Platform Engineering · Infrastructure
+url: "https://jmichaelthurman.github.io"
+baseurl: ""
+
+# No theme — custom HTML/CSS
+plugins: []
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
