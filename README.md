@@ -61,6 +61,41 @@ Most of my production contributions live under my work account.
 
 ---
 
+## Open Source
+
+### [eks-upgrade-check](https://github.com/jmichaelthurman/eks-upgrade-check)
+> Python CLI for Kubernetes upgrade readiness assessment. Built to replace manual pre-upgrade checklists with scored, CI-gateable output.
+
+- 0–100 readiness scoring engine with weighted categories across deprecations, addon versions, CRD compatibility, workload health, and security policies
+- 12 typed exit codes for CI/CD pipeline integration — gate on specific failure conditions, not just pass/fail
+- MCP server integration exposes checks as callable tools for AI agents
+- Containerized deployment: Docker image with all required tools and MCP servers, designed to run as a scheduled scan
+- v3.5.0 · 123+ merged PRs
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-4a9eff?style=flat-square&logoColor=white)
+
+---
+
+### [open-brain-cloud](https://github.com/jmichaelthurman/open-brain-cloud)
+> A cloud-native personal AI memory system — capture thoughts from any Claude client, retrieve them semantically from anywhere.
+
+MCP server running on Fly.io, storing knowledge in Supabase Postgres with pgvector. Every thought is embedded with Voyage AI (`voyage-3-lite`, 512-dim HNSW index) and linked into a typed knowledge graph you build yourself.
+
+- 6 MCP tools: `capture_thought`, `search_thoughts`, `list_recent`, `link_thoughts`, `get_links`, `stats`
+- Metadata extraction (people, topics, action items) via claude-haiku-4 through OpenRouter
+- `/capture` REST endpoint for iOS Shortcuts — capture from any device, query from any Claude session
+- Typed directional knowledge graph: `related` · `supports` · `contradicts` · `follows_from` · `part_of` · `example_of` · `references`
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Fly.io](https://img.shields.io/badge/Fly.io-7C3AED?style=flat-square&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-4a9eff?style=flat-square&logoColor=white)
+
+---
+
 ## Featured Projects
 
 ### Terramate Catalyst Bundles Framework
