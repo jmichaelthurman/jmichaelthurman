@@ -1,23 +1,31 @@
-# J. Michael Thurman - DevOps / Platform Engineer
+# J. Michael Thurman
 
-> Building scalable cloud infrastructure and developer platforms
+> I build the platforms 100-engineer teams ship on —
+> multi-account AWS, EKS at scale, GitOps from day one.
 
+[![CV Chat](https://img.shields.io/badge/Chat_with_my_CV-4a9eff?style=for-the-badge&logo=anthropic&logoColor=white)](https://jmichaelthurman.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jmichaelthurman)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jmthurman@cloudbrook.net)
 
 ---
 
-## Professional Work
+10+ years in cloud infrastructure. Currently running the platform at **SumerSports** — 10 EKS clusters, 15 AWS accounts, 100 engineers. Previously **Senior SRE at Moonswitch**, operating 12 EKS clusters across 5 client environments including Azure Government Cloud air-gapped workloads.
 
-Most of my professional contributions are under my work account:
+AWS Certified: **DevOps Professional** · **SysOps Associate**
 
-**Work Account:** [@mthurman-sumer](https://github.com/mthurman-sumer) | **Organization:** [SumerSports](https://github.com/SumerSports)
-
-**Focus:** Infrastructure as Code, AWS Multi-Account Architecture, GitOps, Kubernetes
+Some things I've shipped:
+- Reduced full-environment disaster recovery from **72 hours → 12–18 hours** by codifying all client infrastructure in Terraform
+- Led a 12-month program that recovered **$600k from a $1.2M undocumented Azure footprint** (approved budget: $0)
+- Cut Aurora cluster provisioning from **10 business days → 30 minutes** via self-service IaC bundles (Terramate Catalyst)
+- Diagnosed cascading failures in a **65-node EKS cluster** running 250+ preview environments — DNS quota exhaustion, 800+ leaked DB connections
 
 ---
 
-## GitHub Activity
+## Activity
+
+Most of my production contributions live under my work account.
+
+**Work Account:** [@mthurman-sumer](https://github.com/mthurman-sumer) | **Org:** [SumerSports](https://github.com/SumerSports)
 
 ### Work
 ![](https://raw.githubusercontent.com/jmichaelthurman/jmichaelthurman/main/profile-cards/work/tokyonight/0-profile-details.svg)
@@ -29,105 +37,89 @@ Most of my professional contributions are under my work account:
 
 ---
 
-## Technology Stack
+## Stack
 
-### Infrastructure & Cloud
+### Cloud & IaC
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![Terramate](https://img.shields.io/badge/Terramate-00ADD8?style=for-the-badge&logo=terraform&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 
-### Orchestration & CI/CD
+### GitOps & CI/CD
 ![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
 ### Languages & Tools
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![HCL](https://img.shields.io/badge/HCL-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 
-### Databases & Monitoring
+### Observability & Data
+![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Aurora](https://img.shields.io/badge/Aurora-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white)
 
 ---
 
-## Featured Professional Projects
+## Featured Projects
 
 ### Terramate Catalyst Bundles Framework
-> Created an infrastructure scaffolding framework using Terramate Catalyst that packages
-> reusable AWS patterns into composable bundles with a 5-layer architecture.
+> Infrastructure scaffolding framework: composable AWS patterns provisioned via a single `catalyst scaffold` command.
 
-- Architected and maintain a bundle system (Objects > Components > Bundles > Stacks > Generated Files) enabling teams to provision production-grade infrastructure through a single `catalyst scaffold` command
+- Architected a 5-layer bundle system (Objects > Components > Bundles > Stacks > Generated Files) consumed across a 15-account AWS org
 - Built RDS Aurora Global Cluster bundle: multi-region failover, IRSA integration, CloudWatch monitors, Datadog observability, KMS encryption
 - Implemented typed schema validation, Checkov security scanning, and automated code generation
 - Components include: IRSA roles, Route53 subdomains, ArgoCD applications, S3 buckets
 
-**Technologies:** OpenTofu/Terraform, Terramate Catalyst, AWS (Aurora, EKS, KMS, Route53, ACM), HCL
+**Technologies:** OpenTofu/Terraform · Terramate Catalyst · AWS (Aurora, EKS, KMS, Route53, ACM) · HCL
 
 ---
 
 ### AWS Multi-Account Infrastructure Platform
-> Designed and operated a multi-account AWS platform serving 9+ environments using
-> OpenTofu, Terramate, and ArgoCD.
+> Multi-account AWS platform serving 9+ environments — OpenTofu, Terramate, and ArgoCD at the core.
 
 - Managed EKS clusters with Karpenter autoscaling, node group normalization, and ALB controller integration
-- Built Aurora Serverless v2 databases with cross-region failover and environment-specific capacity tuning
+- Built Aurora Serverless v2 with cross-region failover and environment-specific capacity tuning
 - Implemented Serverless PrivateLink with Lambda-automated RDS failover for cross-VPC database connectivity
-- Provisioned CloudFront CDN distributions, KMS key management, and SQS queues for data pipelines
-- Led infrastructure contributions across 11 repositories using trunk-based development and code review workflows
+- Provisioned CloudFront CDN, KMS key management, and SQS queues for data pipelines
+- 1,293 commits · 100+ merged PRs · 11 repositories · trunk-based development
 
-**Technologies:** OpenTofu, Terramate, AWS (EKS, Aurora, CloudFront, Lambda, PrivateLink, KMS, SQS), Karpenter
+**Technologies:** OpenTofu · Terramate · AWS (EKS, Aurora, CloudFront, Lambda, PrivateLink, KMS, SQS) · Karpenter
 
 ---
 
 ### ArgoCD GitOps Platform
-> Kubernetes application deployment platform managing all services across multiple
-> EKS clusters through GitOps.
+> Kubernetes application deployment platform across multiple EKS clusters, managed entirely through GitOps.
 
 - Defined ArgoCD ApplicationSet patterns for multi-cluster system application deployment
-- Configured Datadog agent integration for RDS database monitoring and APM tracing
+- Configured Datadog agent for RDS monitoring and APM tracing
 - Managed Helm chart lifecycle for C#/.NET and TypeScript microservices
 - Led Kafka/Strimzi decommissioning across production clusters
 - Deployed LiteLLM AI gateway with autoscaling and GitHub Actions Runner Controller (ARC)
 
-**Technologies:** ArgoCD, Helm, Kubernetes, Datadog, GitHub Actions
+**Technologies:** ArgoCD · Helm · Kubernetes · Datadog · GitHub Actions
 
 ---
 
-### Shared Terraform Module Library
-> Authored and maintained shared OpenTofu modules consumed across all infrastructure
-> stacks in a multi-account AWS organization.
+### Shared OpenTofu Module Library
+> Reusable infrastructure modules consumed across all stacks in a multi-account AWS organization.
 
 - Aurora RDS module with KMS key rotation and environment-specific configuration
 - Serverless PrivateLink module with Lambda-automated cross-VPC failover
 - IRSA role module with configurable trust policies
 - CloudFront module with S3 origin access and cache behavior ordering
 
-**Technologies:** OpenTofu/Terraform, AWS
+**Technologies:** OpenTofu/Terraform · AWS
 
 ---
 
-## Professional Experience
+## Experience
 
-**DevOps / Platform Engineer** @ SumerSports
-*2025 - Present*
+**DevOps / Platform Engineer** — SumerSports *(2025 – Present)*
+Own the full infrastructure lifecycle across a 15-account AWS org: IaC authoring, GitOps deployment, production monitoring. 1,293 commits and 100+ merged PRs across 11 repositories in year one.
 
-- Own the full infrastructure lifecycle: IaC module authoring through GitOps deployment to production monitoring
-- 1,293 commits and 100+ merged PRs across 11 repositories in first year
-- Reviewed 35+ pull requests from team members
-- Created 50+ issues for infrastructure tracking and planning
-- Primary technologies: OpenTofu/Terraform, AWS (EKS, Aurora, CloudFront), ArgoCD, Datadog, GitHub Actions
-
----
-
-## Get In Touch
-
-- LinkedIn: [J. Michael Thurman](https://linkedin.com/in/jmichaelthurman)
-- Email: jmthurman@cloudbrook.net
-- Work GitHub: [@mthurman-sumer](https://github.com/mthurman-sumer)
+**Senior Site Reliability Engineer** — Moonswitch *(Prior)*
+Operated 12 EKS clusters across 5 client environments. Reduced disaster recovery time from 72 hours to 12–18 hours by codifying all client infrastructure in Terraform. Led a $600k Azure cost recovery program. Managed Azure Government Cloud air-gapped workloads under FedRAMP/FISMA/NIST-800-53 compliance frameworks.
 
 ---
 
